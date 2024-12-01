@@ -1,4 +1,4 @@
-package se.rikardbq
+package se.rikardbq.days
 
 import java.util.ArrayList
 import kotlin.math.abs
@@ -43,12 +43,11 @@ class DayOne(override val path: String) : AdventDay {
         for (i in secondList.indices) {
             val k = secondList[i]
             if (firstList.contains(k)) {
-                val v = resultMap[k] ?: 0
-                resultMap[k] = v + 1
+                resultMap[k] = (resultMap[k] ?: 0) + 1
             }
         }
 
-        return resultMap.map { entry -> entry.key * entry.value }.sum()
+        return resultMap.map { (k, v) -> k * v }.sum()
     }
 
     override fun run() {

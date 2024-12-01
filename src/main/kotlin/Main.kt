@@ -1,7 +1,6 @@
 package se.rikardbq
 
-import java.io.File
-import java.io.InputStream
+import se.rikardbq.days.DayOne
 
 fun main() {
     println("******************************")

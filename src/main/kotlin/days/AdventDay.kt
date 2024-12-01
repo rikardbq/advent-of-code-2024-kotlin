@@ -1,4 +1,4 @@
-package se.rikardbq
+package se.rikardbq.days
 
 import java.io.File
 import java.io.InputStream
