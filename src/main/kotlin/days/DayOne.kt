@@ -51,10 +51,7 @@ class DayOne(override val path: String) : AdventDay {
     }
 
     override fun run() {
-        val partOneRes = this.partOne()
-        val partTwoRes = this.partTwo()
-
-        println("PART ONE: $partOneRes")
-        println("PART TWO: $partTwoRes")
+        println("PART ONE: ${this.partOne()}")
+        println("PART TWO: ${this.partTwo()}")
     }
 }
